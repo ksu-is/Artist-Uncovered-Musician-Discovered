@@ -1,10 +1,10 @@
 # Artist Uncovered, Musician Discovered
 
 ## Project Roadmap
-[X] Define project idea and purpose  
+[X] Define project idea and purpose
 [X] Set up Flask project  
-[X] Created templates folder with home.html and results.html
-[X] Created static folder with style.css
+[X] Created templates folder with home.html and results.html 
+[X] Created static folder with style.css 
 [ ] Create homepage with search bar  
 [ ] Connect to Spotify API  
 [ ] Display artist data (name, genre, popularity, etc.)  
