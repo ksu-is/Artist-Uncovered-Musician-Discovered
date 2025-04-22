@@ -5,6 +5,14 @@
 </head>
 <body>
     <h1>Search Results</h1>
-    <p>Results will be displayed here.</p>
+    {% if artist %}
+        <h2>{{ artist.name }}</h2>
+        {% if artist.images %}
+            <img src="{{ artist.images[0].url }}" alt="Artist Image" width="300">
+        {% endif %}
+        <p><a href="{{ artist.external_urls.spotify }}" target="_blank">View on Spotify</a></p>
+    {% else %}
+        <p>No artist found. Try another search.</p>
+    {% endif %}
 </body>
 </html>
