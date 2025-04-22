@@ -11,7 +11,8 @@ def home():
 def search():
     artist_name = request.form['artist']
     result = search_artist(artist_name)
-    return f"Top result: {result}" 
+    
+    return render_template('search_results.html', artist=result)
 
 if __name__ == '__main__':
     app.run(debug=True)
